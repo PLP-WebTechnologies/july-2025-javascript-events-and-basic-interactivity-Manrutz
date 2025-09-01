@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ManRutz Tech Solutions Limited</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ManRutz Tech Solutions Limited</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Section -->
+    <section class="card">
+      <h2>Interactive Counter</h2>
+      <p>Click the button to increase the counter.</p>
+      <div class="counter">
+        <span id="count">0</span>
+        <button id="incrementBtn">➕ Increment</button>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="card">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <button class="faq-question">What services does ManRutz offer?</button>
+        <p class="faq-answer">We specialize in AI-powered branding, web development, and digital solutions.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How can I contact ManRutz?</button>
+        <p class="faq-answer">Reach us via our contact form or email info@manrutz.com.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="card">
+      <h2>Get in Touch</h2>
+      <form id="contactForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email" required>
+        <small class="error" id="emailError"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Submit</button>
+        <p id="formSuccess" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ManRutz Tech Solutions Limited</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
